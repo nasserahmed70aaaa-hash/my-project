@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد - ناصر الزقري</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/vv.css">
+    <link rel="stylesheet" href="./assets/css/singin.css">
+</head>
+<body>
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-card animated">
+            <div class="auth-header">
+                <h1>أنشئ حساباً جديداً</h1>
+                <p>انضم إلى مجتمعنا وابدأ رحلتك في عالم الأمن السيبراني</p>
+            </div>
+
+            <form class="auth-form" id="signupForm">
+                <div class="form-group">
+                    <label for="fullname">الاسم الكامل</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <span class="error-message" id="fullnameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">اسم المستخدم</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-at"></i>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <span class="error-message" id="usernameError"></span>
+                    <div class="input-feedback" id="usernameFeedback"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" required>
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength" id="passwordStrength">
+                        <div class="strength-bar">
+                            <div class="strength-fill" id="strengthFill"></div>
+                        </div>
+                        <span class="strength-text" id="strengthText">قوة كلمة المرور</span>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">تأكيد كلمة المرور</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                        <span class="checkmark"></span>
+                        أوافق على <a href="#">الشروط والأحكام</a> و <a href="#">سياسة الخصوصية</a>
+                    </label>
+                    <span class="error-message" id="termsError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <span class="checkmark"></span>
+                        أرغب في تلقي النشرة الإخبارية حول آخر التحديثات والدورات
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-user-plus"></i> إنشاء حساب
+                </button>
+
+                <div class="social-signup">
+                    <p>أو سجل باستخدام</p>
+                    <div class="social-buttons">
+                        <button type="button" class="btn-social google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button type="button" class="btn-social facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                <p>لديك حساب بالفعل؟ <a href="login.html">سجل الدخول هنا</a></p>
+            </div>
+        </div>
+
+        <div class="auth-welcome animated delay-1">
+            <div class="welcome-content">
+                <h2>لماذا تنضم إلينا؟</h2>
+                <p>انضم إلى مجتمع متخصصي الأمن السيبراني واستفد من المزايا الحصرية</p>
+                <div class="features-list">
+                    <div class="feature">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>وصول حصري للدورات التعليمية</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <span>مجتمع من المتخصصين في المجال</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bell"></i>
+                        <span>إشعارات بأحدث التهديدات الأمنية</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-briefcase"></i>
+                        <span>فرص عمل وتواصل مع الشركات</span>
+                    </div>
+                </div>
+                <button class="btn btn-outline" onclick="location.href='index.html'">
+                    <i class="fas fa-home"></i> العودة إلى الرئيسية
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification-toast" id="notificationToast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="./assets/js/singin.js"></script>
+</body>
+</html>
